@@ -9,7 +9,7 @@ Property names should all be in the following format:
 
 An example of this would be:
 
-`domain.database.mediahaven_snapshot_prd.host`
+`domain.database.mediahaven_snapshot.host`
 
 Where 'domain' is static, to avoid conflicting with applications.
 
