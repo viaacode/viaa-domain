@@ -18,4 +18,4 @@ The following connectors can be referenced when using the VIAA Domain:
 
 | Type | Name | Description |
 | - | - | - |
-| Database | MAM_Snapshot_PRD | The Mediahaven Snapshot database in production | 
+| Database | MAM_Snapshot | The Mediahaven Snapshot database | 

@@ -15,5 +15,5 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd">
     <context:property-placeholder location="domain-${mule.env}.properties"/>
- 	<db:generic-config name="MAM_Snapshot_PRD" url="${domain.database.mediahaven_snapshot_prd.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>	
+ 	<db:generic-config name="MAM_Snapshot" url="${domain.database.mediahaven_snapshot.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>	
 </domain:mule-domain>
