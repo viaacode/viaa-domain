@@ -1,0 +1,6 @@
+domain.database.mediahaven_snapshot.host=
+domain.database.mediahaven_snapshot.port=
+domain.database.mediahaven_snapshot.database=
+domain.database.mediahaven_snapshot.username=
+domain.database.mediahaven_snapshot.password=
+domain.database.mediahaven_snapshot.url=jdbc:postgresql://${domain.database.mediahaven_snapshot.host}:${domain.database.mediahaven_snapshot.port}/${domain.database.mediahaven_snapshot.database}?password=${domain.database.mediahaven_snapshot.password}&user=${domain.database.mediahaven_snapshot.username}
