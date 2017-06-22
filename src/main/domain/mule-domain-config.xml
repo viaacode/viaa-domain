@@ -8,12 +8,15 @@
         xmlns:db="http://www.mulesoft.org/schema/mule/db"
         xmlns:context="http://www.springframework.org/schema/context"
         xmlns:slack="http://www.mulesoft.org/schema/mule/slack"
+        xmlns:http="http://www.mulesoft.org/schema/mule/http"
         xsi:schemaLocation="http://www.mulesoft.org/schema/mule/slack http://www.mulesoft.org/schema/mule/slack/current/mule-slack.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
-http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd">
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
     <context:property-placeholder location="domain-${mule.env}.properties"/>
- 	<db:generic-config name="MAM_Snapshot" url="${domain.database.mediahaven_snapshot.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>	
+    <db:generic-config name="MAM_Snapshot" url="${domain.database.mediahaven_snapshot.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
+    <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration"/>	
 </domain:mule-domain>
