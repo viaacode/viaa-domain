@@ -24,9 +24,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <db:generic-config name="Gazetten" url="${domain.database.gazetten.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
     
     <!-- HTTP Connectors -->
-    <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration"/>
-	<http:request-config name="MAM_Monitoring_API" protocol="HTTPS" host="${domain.http.mediahaven_monitoring_api.host}" port="${domain.http.mediahaven_monitoring_api.port}" basePath="${domain.http.mediahaven_monitoring_api.basepath}" doc:name="HTTP Request Configuration"/>
-	<http:request-config name="LDAP2MAM" host="${domain.http.ldap2mam.host}" port="${domain.http.ldap2mam.port}" basePath="${domain.http.ldap2mam.basepath}" doc:name="HTTP Request Configuration">
+    <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="30000"/>
+	<http:request-config name="MAM_Monitoring_API" protocol="HTTPS" host="${domain.http.mediahaven_monitoring_api.host}" port="${domain.http.mediahaven_monitoring_api.port}" basePath="${domain.http.mediahaven_monitoring_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="30000"/>
+	<http:request-config name="LDAP2MAM" host="${domain.http.ldap2mam.host}" port="${domain.http.ldap2mam.port}" basePath="${domain.http.ldap2mam.basepath}" doc:name="HTTP Request Configuration" responseTimeout="30000">
         <http:raml-api-configuration location="${domain.http.ldap2mam.ramllocation}"/>
     </http:request-config>	
 </domain:mule-domain>
