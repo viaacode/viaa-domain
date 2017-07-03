@@ -19,3 +19,7 @@ The following connectors can be referenced when using the VIAA Domain:
 | Type | Name | Description |
 | - | - | - |
 | Database | MAM_Snapshot | The Mediahaven Snapshot database | 
+| Database | Gazetten | The gazetten database |
+| HTTP | MAM_Rest_API | The Mediahaven REST API |
+| HTTP | MAM_Monitoring_API | The Mediahaven Monitoring REST API |
+| HTTP | LDAP2MAM | The LDAP2MAM REST API |

@@ -26,6 +26,11 @@ domain.http.mediahaven_rest_api.host=
 domain.http.mediahaven_rest_api.port=443
 domain.http.mediahaven_rest_api.basepath=/mediahaven-rest-api/resources/media
 
+# Mediahaven Monitoring API
+domain.http.mediahaven_rest_api.host=
+domain.http.mediahaven_rest_api.port=443
+domain.http.mediahaven_rest_api.basepath=/monitoring
+
 # LDAP2MAM
 domain.http.ldap2mam.host=
 domain.http.ldap2mam.port=
