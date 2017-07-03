@@ -26,7 +26,6 @@ tmp/**/*
 .settings/
 .loadpath
 # You may want to remove the sharp symbols here if you are using Maven
-.project
 # External tool builders
 .externalToolBuilders/
 # Locally stored "Eclipse launch configurations"
