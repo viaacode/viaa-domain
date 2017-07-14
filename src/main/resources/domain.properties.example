@@ -17,6 +17,9 @@ domain.database.gazetten.username=
 domain.database.gazetten.password=
 domain.database.gazetten.url=jdbc:postgresql://${domain.database.gazetten.host}:${domain.database.gazetten.port}/${domain.database.gazetten.database}?password=${domain.database.gazetten.password}&user=${domain.database.gazetten.username}
 
+# VIAA borndigital database
+domain.database.borndigital.database=borndigital
+domain.database.borndigital.url=jdbc:postgresql://${domain.database.gazetten.host}:${domain.database.gazetten.port}/${domain.database.borndigital.database}?password=${domain.database.gazetten.password}&user=${domain.database.gazetten.username}
 
 #################################################
 #####              REST APIS                #####
