@@ -22,7 +22,10 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <!-- Databases -->
     <db:generic-config name="MAM_Snapshot" url="${domain.database.mediahaven_snapshot.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
     <db:generic-config name="Gazetten" url="${domain.database.gazetten.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
-    <db:generic-config name="Borndigital" url="${domain.database.borndigital.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
+    <db:generic-config name="Borndigital" url="${domain.database.borndigital.url}" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration">
+    	<db:pooling-profile maxPoolSize="100" acquireIncrement="5" preparedStatementCacheSize="25"/> 
+        <reconnect></reconnect>
+    </db:generic-config>
     
     <!-- HTTP Connectors -->
     <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="60000"/>
