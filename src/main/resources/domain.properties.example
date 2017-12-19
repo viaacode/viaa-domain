@@ -20,7 +20,7 @@ domain.database.mediahaven.url=jdbc:postgresql://${domain.database.mediahaven.ho
 # VIAA gazetten database
 domain.database.gazetten.host=
 domain.database.gazetten.port=
-domain.database.gazetten.database=cegesoma
+domain.database.gazetten.database=kranten
 domain.database.gazetten.username=
 domain.database.gazetten.password=
 domain.database.gazetten.url=jdbc:postgresql://${domain.database.gazetten.host}:${domain.database.gazetten.port}/${domain.database.gazetten.database}?password=${domain.database.gazetten.password}&user=${domain.database.gazetten.username}
