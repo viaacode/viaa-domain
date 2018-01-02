@@ -7,10 +7,8 @@
         xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
         xmlns:db="http://www.mulesoft.org/schema/mule/db"
         xmlns:context="http://www.springframework.org/schema/context"
-        xmlns:slack="http://www.mulesoft.org/schema/mule/slack"
         xmlns:http="http://www.mulesoft.org/schema/mule/http"
-        xsi:schemaLocation="http://www.mulesoft.org/schema/mule/slack http://www.mulesoft.org/schema/mule/slack/current/mule-slack.xsd
-http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+        xsi:schemaLocation="http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
@@ -29,7 +27,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     </db:generic-config>
     
     <!-- HTTP Connectors -->
-    <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="60000" doc:description="https://example.com/mediahaven-rest-api/resources/media"/>
+    <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="120000" doc:description="https://example.com/mediahaven-rest-api/resources/media"/>
 	<http:request-config name="MAM_Monitoring_API" protocol="HTTPS" host="${domain.http.mediahaven_monitoring_api.host}" port="${domain.http.mediahaven_monitoring_api.port}" basePath="${domain.http.mediahaven_monitoring_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="120000" doc:description="https://example.com/monitoring"/>
 	<http:request-config name="LDAP2MAM" host="${domain.http.ldap2mam.host}" port="${domain.http.ldap2mam.port}" basePath="${domain.http.ldap2mam.basepath}" doc:name="HTTP Request Configuration" responseTimeout="30000" doc:description="http://example.com/api">
         <http:raml-api-configuration location="${domain.http.ldap2mam.ramllocation}"/>
