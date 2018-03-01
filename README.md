@@ -13,8 +13,8 @@ An example of this would be:
 
 Where 'domain' is static, to avoid conflicting with applications.
 
-## Included connectors
-The following connectors can be referenced when using the VIAA Domain:
+## Included connector configurations
+The following connector configurations can be referenced when referencing the VIAA Domain within your application:
 
 | Type | Name | Description |
 | - | - | - |
