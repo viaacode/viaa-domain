@@ -9,10 +9,18 @@ domain.database.mediahaven_snapshot.username=
 domain.database.mediahaven_snapshot.password=
 domain.database.mediahaven_snapshot.url=jdbc:postgresql://${domain.database.mediahaven_snapshot.host}:${domain.database.mediahaven_snapshot.port}/${domain.database.mediahaven_snapshot.database}?password=${domain.database.mediahaven_snapshot.password}&user=${domain.database.mediahaven_snapshot.username}
 
+# Mediahaven Primary database
+domain.database.mediahaven.host=
+domain.database.mediahaven.port=
+domain.database.mediahaven.database=mediahaven_data
+domain.database.mediahaven.username=
+domain.database.mediahaven.password=
+domain.database.mediahaven.url=jdbc:postgresql://${domain.database.mediahaven.host}:${domain.database.mediahaven.port}/${domain.database.mediahaven.database}?password=${domain.database.mediahaven.password}&user=${domain.database.mediahaven.username}
+
 # VIAA gazetten database
 domain.database.gazetten.host=
 domain.database.gazetten.port=
-domain.database.gazetten.database=cegesoma
+domain.database.gazetten.database=kranten
 domain.database.gazetten.username=
 domain.database.gazetten.password=
 domain.database.gazetten.url=jdbc:postgresql://${domain.database.gazetten.host}:${domain.database.gazetten.port}/${domain.database.gazetten.database}?password=${domain.database.gazetten.password}&user=${domain.database.gazetten.username}
