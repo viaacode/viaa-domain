@@ -28,7 +28,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     
     <!-- HTTP Connectors -->
     <http:request-config name="MAM_Rest_API" protocol="HTTPS" host="${domain.http.mediahaven_rest_api.host}" port="${domain.http.mediahaven_rest_api.port}" basePath="${domain.http.mediahaven_rest_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="120000" doc:description="https://example.com/mediahaven-rest-api/resources/media"/>
-	<http:request-config name="MAM_Monitoring_API" protocol="HTTPS" host="${domain.http.mediahaven_monitoring_api.host}" port="${domain.http.mediahaven_monitoring_api.port}" basePath="${domain.http.mediahaven_monitoring_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="120000" doc:description="https://example.com/monitoring"/>
+	<http:request-config name="MAM_Monitoring_API" protocol="HTTPS" host="${domain.http.mediahaven_monitoring_api.host}" port="${domain.http.mediahaven_monitoring_api.port}" basePath="${domain.http.mediahaven_monitoring_api.basepath}" doc:name="HTTP Request Configuration" responseTimeout="240000" doc:description="https://example.com/monitoring"/>
+	<http:request-config name="Elasticsearch" protocol="HTTP" host="${domain.http.elasticsearch.host}" port="${domain.http.elasticsearch.port}" basePath="${domain.http.elasticsearch.basepath}" doc:name="HTTP Request Configuration" responseTimeout="240000" doc:description="https://example.com"/>
 	<http:request-config name="LDAP2MAM" host="${domain.http.ldap2mam.host}" port="${domain.http.ldap2mam.port}" basePath="${domain.http.ldap2mam.basepath}" doc:name="HTTP Request Configuration" responseTimeout="30000" doc:description="http://example.com/api">
         <http:raml-api-configuration location="${domain.http.ldap2mam.ramllocation}"/>
     </http:request-config>
