@@ -31,8 +31,15 @@ The following connector configurations can be referenced when referencing the VI
 
 ## Prerequisites
 
-TODO
+Install AnyPoint Studio on your computer.
+- https://anypoint.mulesoft.com/login/#/signup?apintent=generic
+
 
 ## Installation
 
-TODO
+In AnyPoint Studio select:
+- File
+- Import
+- 'Maven-based Mule Project from pom.xml'
+- Browse to your project file
+- Select pom.xml
